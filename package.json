@@ -39,7 +39,7 @@
     "jsdoc-to-markdown": "3.0.0",
     "mkdirp": "0.5.1",
     "rimraf": "2.6.0",
-    "semantic-release": "6.3.2",
+    "semantic-release": "^6.3.2",
     "standard": "8.6.0",
     "validate-commit-msg": "^2.11.1"
   },
