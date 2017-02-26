@@ -62,16 +62,16 @@ TODO: A JSDoc 3 tutorial (re currying) needs to be injected in this README.md. F
 ## @justinc/no-dups-validator
 <a name="module_@justinc/no-dups-validator..noDups"></a>
 
-### @justinc/no-dups-validator~noDups(iterable, errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
+### @justinc/no-dups-validator~noDups([iterable], errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
 This function is curried.
 
 **Kind**: inner method of <code>[@justinc/no-dups-validator](#module_@justinc/no-dups-validator)</code>  
 **See**: [Tuple](#module_@justinc/jsdocs.Tuple)  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| iterable | <code>Iterable</code> | The iterable whose elements are checked for duplicates |
-| errMsgPrefix | <code>String</code> | A string to prefix any found duplicates in the error message |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [iterable] | <code>Iterable</code> | <code>[]</code> | The iterable whose elements are checked for duplicates |
+| errMsgPrefix | <code>String</code> |  | A string to prefix any found duplicates in the error message |
 
 <a name="module_@justinc/jsdocs"></a>
 
