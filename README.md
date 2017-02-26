@@ -23,6 +23,23 @@ noDups([1, 2, 3, 2, 1])('Found the following duplicates: ')
 
 If you're OK with using [Folktale Validation](http://docs.folktalejs.org/en/latest/api/data/validation/Validation.html), you might be interested in [combine-validations](https://github.com/justin-calleja/combine-validations).
 
+To use this package with `combine-validations` you will need to convert its output `Tuple<Boolean, Array<Error>>` to a Folktale Validation with something like this:
+
+```js
+const Validation = require('data.validation')
+const noDups = require('@justinc/no-dups-validator')
+const combineValidations = require('@justinc/combine-validations')
+
+const { Success, Failure } = Validation
+
+const asValidation = ([isValid, errors]) => isValid ? Success(true) : Failure(errors)
+
+const input = ['hello', 'world', 'hello']
+const validation = combineValidations([
+  asValidation(noDups(input)())
+])
+```
+
 ### Tutorials
 
 TODO: A JSDoc 3 tutorial (re currying) needs to be injected in this README.md. For now there's only a link:
