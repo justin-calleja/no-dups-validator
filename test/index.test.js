@@ -27,6 +27,7 @@ test('Should give [ false, [errors] ] when duplicates exist in given iterable', 
   t.false(validation[0])
   t.is(validation[1].length, 1)
   t.true(typeof validation[1][0].message === 'string')
+  t.true(validation[1][0].message.endsWith('2'))
 })
 
 test('Should prefix the Error message with the given prefix when duplicates exist', t => {
@@ -35,4 +36,5 @@ test('Should prefix the Error message with the given prefix when duplicates exis
   t.false(validation[0])
   t.is(validation[1].length, 1)
   t.true(validation[1][0].message.startsWith(prefix))
+  t.true(validation[1][0].message.endsWith('2'))
 })

@@ -62,7 +62,7 @@ TODO: A JSDoc 3 tutorial (re currying) needs to be injected in this README.md. F
 ## @justinc/no-dups-validator
 <a name="module_@justinc/no-dups-validator..noDups"></a>
 
-### @justinc/no-dups-validator~noDups([iterable], errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
+### @justinc/no-dups-validator~noDups([iterable], [errMsgPrefix]) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
 This function is curried.
 
 **Kind**: inner method of <code>[@justinc/no-dups-validator](#module_@justinc/no-dups-validator)</code>  
@@ -71,7 +71,7 @@ This function is curried.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [iterable] | <code>Iterable</code> | <code>[]</code> | The iterable whose elements are checked for duplicates |
-| errMsgPrefix | <code>String</code> |  | A string to prefix any found duplicates in the error message |
+| [errMsgPrefix] | <code>String</code> | <code>&#x27;&#x27;</code> | A string to prefix any found duplicates in the error message |
 
 <a name="module_@justinc/jsdocs"></a>
 
@@ -107,11 +107,11 @@ Tuple<String, Array<String>, Array<String>>
 [version-image]: https://img.shields.io/npm/v/@justinc/no-dups-validator.svg?style=flat-square
 [version-url]: https://npmjs.org/package/@justinc/no-dups-validator
 
-[standard-image]: https://img.shields.io/badge/code-standard-brightgreen.svg?style=flat-square
+[standard-image]: https://img.shields.io/badge/code-standard-yellow.svg?style=flat-square
 [standard-url]: https://github.com/feross/standard
 
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 
-[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square
+[license-image]: https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square
 [license-url]: ./LICENSE
