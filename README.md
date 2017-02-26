@@ -6,18 +6,33 @@ Checks for duplicates given an [Iterable](https://developer.mozilla.org/en/docs/
 
 `npm i @justinc/no-dups-validator`
 
-### Example of usage
+### Demo
+
+(see tests for more examples)
 
 ```js
 const noDups = require('@justinc/no-dups-validator')
-// TODO:
+noDups([1, 2, 3])()
+// [ true, [] ]
+
+noDups([1, 2, 3, 2, 1])('Found the following duplicates: ')
+// [ false, [ new Error('Found the following duplicates: 2, 1) ] ]
 ```
+
+### [combine-validations](https://github.com/justin-calleja/combine-validations)
+
+If you're OK with using [Folktale Validations](http://docs.folktalejs.org/en/latest/api/data/validation/Validation.html) you might be interested in [combine-validations](https://github.com/justin-calleja/combine-validations).
+
+### Tutorials
+
+TODO: A JSDoc 3 tutorial (re currying) needs to be injected in this README.md. For now there's only a link:
+
+* tutorial: [curry.md](https://github.com/justin-calleja/jsdocs/blob/master/tutorials/curry.md)
+* issue: jsdoc2md/jsdoc-to-markdown#115
 
 ## Modules
 
 <dl>
-<dt><a href="#module_@justinc/no-dups-validator">@justinc/no-dups-validator</a></dt>
-<dd></dd>
 <dt><a href="#module_@justinc/no-dups-validator">@justinc/no-dups-validator</a></dt>
 <dd></dd>
 <dt><a href="#module_@justinc/jsdocs">@justinc/jsdocs</a></dt>
@@ -28,58 +43,6 @@ const noDups = require('@justinc/no-dups-validator')
 <a name="module_@justinc/no-dups-validator"></a>
 
 ## @justinc/no-dups-validator
-
-* [@justinc/no-dups-validator](#module_@justinc/no-dups-validator)
-    * [~noDups(iterable, errMsgPrefix)](#module_@justinc/no-dups-validator..noDups) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-    * [~noDups(iterable, errMsgPrefix)](#module_@justinc/no-dups-validator..noDups) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-
-<a name="module_@justinc/no-dups-validator..noDups"></a>
-
-### @justinc/no-dups-validator~noDups(iterable, errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-This function is curried.
-
-**Kind**: inner method of <code>[@justinc/no-dups-validator](#module_@justinc/no-dups-validator)</code>  
-**See**: [Tuple](#module_@justinc/jsdocs.Tuple)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| iterable | <code>Iterable</code> | The iterable whose elements are checked for duplicates |
-| errMsgPrefix | <code>String</code> | A string to prefix any found duplicates in the error message |
-
-<a name="module_@justinc/no-dups-validator..noDups"></a>
-
-### @justinc/no-dups-validator~noDups(iterable, errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-This function is curried.
-
-**Kind**: inner method of <code>[@justinc/no-dups-validator](#module_@justinc/no-dups-validator)</code>  
-**See**: [Tuple](#module_@justinc/jsdocs.Tuple)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| iterable | <code>Iterable</code> | The iterable whose elements are checked for duplicates |
-| errMsgPrefix | <code>String</code> | A string to prefix any found duplicates in the error message |
-
-<a name="module_@justinc/no-dups-validator"></a>
-
-## @justinc/no-dups-validator
-
-* [@justinc/no-dups-validator](#module_@justinc/no-dups-validator)
-    * [~noDups(iterable, errMsgPrefix)](#module_@justinc/no-dups-validator..noDups) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-    * [~noDups(iterable, errMsgPrefix)](#module_@justinc/no-dups-validator..noDups) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-
-<a name="module_@justinc/no-dups-validator..noDups"></a>
-
-### @justinc/no-dups-validator~noDups(iterable, errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>
-This function is curried.
-
-**Kind**: inner method of <code>[@justinc/no-dups-validator](#module_@justinc/no-dups-validator)</code>  
-**See**: [Tuple](#module_@justinc/jsdocs.Tuple)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| iterable | <code>Iterable</code> | The iterable whose elements are checked for duplicates |
-| errMsgPrefix | <code>String</code> | A string to prefix any found duplicates in the error message |
-
 <a name="module_@justinc/no-dups-validator..noDups"></a>
 
 ### @justinc/no-dups-validator~noDups(iterable, errMsgPrefix) ⇒ <code>Tuple.&lt;Boolean, Array.&lt;Error&gt;&gt;</code>

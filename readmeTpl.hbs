@@ -6,12 +6,29 @@ Checks for duplicates given an [Iterable](https://developer.mozilla.org/en/docs/
 
 `npm i @justinc/no-dups-validator`
 
-### Example of usage
+### Demo
+
+(see tests for more examples)
 
 ```js
 const noDups = require('@justinc/no-dups-validator')
-// TODO:
+noDups([1, 2, 3])()
+// [ true, [] ]
+
+noDups([1, 2, 3, 2, 1])('Found the following duplicates: ')
+// [ false, [ new Error('Found the following duplicates: 2, 1) ] ]
 ```
+
+### [combine-validations](https://github.com/justin-calleja/combine-validations)
+
+If you're OK with using [Folktale Validations](http://docs.folktalejs.org/en/latest/api/data/validation/Validation.html) you might be interested in [combine-validations](https://github.com/justin-calleja/combine-validations).
+
+### Tutorials
+
+TODO: A JSDoc 3 tutorial (re currying) needs to be injected in this README.md. For now there's only a link:
+
+* tutorial: [curry.md](https://github.com/justin-calleja/jsdocs/blob/master/tutorials/curry.md)
+* issue: jsdoc2md/jsdoc-to-markdown#115
 
 {{>main}}
 
