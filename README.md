@@ -1,4 +1,4 @@
-# `no-dups-validator` [![NPM version][version-image]][version-url] [![License][license-image]][license-url] [![Js Standard Style][standard-image]][standard-url]
+# `no-dups-validator` [![Build status][travis-image]][travis-url] [![NPM version][version-image]][version-url] [![License][license-image]][license-url] [![Semantic Release][semantic-release-image]][semantic-release-url] [![Js Standard Style][standard-image]][standard-url]
 
 Checks for duplicates given an [Iterable](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Iteration_protocols).
 
@@ -21,7 +21,7 @@ noDups([1, 2, 3, 2, 1])('Found the following duplicates: ')
 
 ### [combine-validations](https://github.com/justin-calleja/combine-validations)
 
-If you're OK with using [Folktale Validations](http://docs.folktalejs.org/en/latest/api/data/validation/Validation.html) you might be interested in [combine-validations](https://github.com/justin-calleja/combine-validations).
+If you're OK with using [Folktale Validation](http://docs.folktalejs.org/en/latest/api/data/validation/Validation.html), you might be interested in [combine-validations](https://github.com/justin-calleja/combine-validations).
 
 ### Tutorials
 
@@ -84,11 +84,17 @@ Tuple<String, Array<String>, Array<String>>
 // e.g. [ 'hello', [ 'world' ], [ 'goodbye', 'world' ] ]
 ```
 
+[travis-image]: https://img.shields.io/travis/justin-calleja/no-dups-validator.svg?style=flat-square
+[travis-url]: https://travis-ci.org/justin-calleja/no-dups-validator
+
 [version-image]: https://img.shields.io/npm/v/@justinc/no-dups-validator.svg?style=flat-square
 [version-url]: https://npmjs.org/package/@justinc/no-dups-validator
 
 [standard-image]: https://img.shields.io/badge/code-standard-brightgreen.svg?style=flat-square
 [standard-url]: https://github.com/feross/standard
+
+[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
+[semantic-release-url]: https://github.com/semantic-release/semantic-release
 
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square
 [license-url]: ./LICENSE
