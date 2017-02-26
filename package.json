@@ -1,6 +1,6 @@
 {
   "name": "@justinc/no-dups-validator",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Checks for duplicates given an Iterable",
   "main": "lib/index.js",
   "scripts": {
